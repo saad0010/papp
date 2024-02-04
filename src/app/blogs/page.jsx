@@ -141,3 +141,4 @@ const Blogs = () => {
 };
 
 export default Blogs;
+export const dynamic = "force-dynamic";

@@ -16,7 +16,7 @@ const ListBlogs = async () => {
   });
   query = `*[_type == "post"] | order(publishedAt desc)`;
 
-  posts = await client.fetch(query);
+  posts = await client.fetch(query, { cache: "no-store" });
 
   // getPost();
   const builder = imageUrlBuilder(client);
